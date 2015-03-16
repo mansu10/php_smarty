@@ -1,0 +1,120 @@
+/************************************************
+*文件名：style.css
+
+*作  用：定义全局页头页尾样式
+
+*作  者：漫溯
+
+*E-mail：mansu.lxy@gmail.com
+************************************************/
+
+
+
+/*页眉*/
+
+header{
+	height: 60px;
+	background: #4d4d4d;
+	color: #fff;
+
+}
+
+.logo{
+	font-size: 30px;
+	left: 30px;
+	top: 10px;
+	width: 300px;
+	position: absolute;
+
+}
+.top-nav{
+	position: absolute;
+	right: 30px;
+	line-height: 60px;
+
+}
+.top-nav li{
+	display: inline-block;
+	float: left;
+	line-height: 60px;
+	margin-right: 20px;
+}
+
+#side-nav{
+	width: 200px;
+	/*height: 100%;*/
+	background: #ddd;
+	position: absolute;	
+	left: 0;
+	top: 60px;
+	bottom: 0;
+}
+/*侧面导航*/
+.accordion{
+	width: 100%;
+	max-width: 198px;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-top: 50px;
+}
+.accordion .link{
+	cursor: pointer;
+	display: block;
+	padding: 15px;
+	padding-left:40px; 
+	color: #4d4d4d;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	line-height: 20px;
+	transition:all .4s ease;
+}
+
+.accordion li span{
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	color: #595959;
+	transition: all .4s;
+}
+.accordion li span.fa-chevron-down{
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+.accordion li.open span.fa-chevron-down{
+	color: #b63b4d;
+}
+.accordion li.open span.fa-chevron-down{
+	transform: rotate(180deg);
+}
+.submenu{
+	display: none;
+	background: #444359;
+}
+.submenu li{
+	border-bottom: 1px solid #4b4a5e;
+}
+.submenu a{
+	display: block;
+	color: #d9d9d9;
+	padding: 12px;
+	transition: all .4s ease;
+}
+.submenu a:hover{
+	text-decoration: none;
+	background: #b63b4d;
+
+}
+footer{
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+}
+footer div{
+	position: relative;
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+}
